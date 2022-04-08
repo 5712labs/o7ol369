@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "posts",
   "info": {
-    "name": "blog",
+    "name": "post",
     "description": ""
   },
   "options": {
@@ -13,12 +13,14 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
-    "description": {
-      "type": "richtext",
-      "required": true
+    "content": {
+      "type": "richtext"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "post"
     }
   }
 }
