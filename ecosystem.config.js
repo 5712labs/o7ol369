@@ -32,7 +32,7 @@ module.exports = {
       path: '/home/deploy/o7ol369',
       'pre-deploy-local': '',
       'post-deploy': "yarn install && pm2 reload ecosystem.config.js --env production --only 'api,batch'",
-      'pre-setup': 'npx dotenv -e .env.production npm run build --clean',
+      'pre-setup': 'npx dotenv -e .env npm run build --clean',
     },
   },
 };
